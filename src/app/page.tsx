@@ -6,7 +6,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
-import Counter from "@/components/Counter";
 import {
   fadeInUp,
   staggerContainer,
