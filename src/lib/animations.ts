@@ -110,11 +110,11 @@ export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0): Vari
   },
 });
 
-export const imageZoomVariants = {
+export const imageZoomVariants: Variants = {
   hover: { scale: 1.05, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export const buttonHoverVariants = {
+export const buttonHoverVariants: Variants = {
   hover: {
     scale: 1.02,
     boxShadow: "0 0 0 4px rgba(242, 193, 78, 0.3)",
@@ -123,7 +123,7 @@ export const buttonHoverVariants = {
   tap: { scale: 0.98 },
 };
 
-export const cardHoverVariants = {
+export const cardHoverVariants: Variants = {
   hover: {
     y: -8,
     boxShadow: "0 10px 40px -10px rgba(27, 27, 28, 0.08)",
