@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  /* Divine Interior Theme Colors */
+  --color-on-background: #1b1b1c;
+  --color-tertiary-fixed-dim: #c8c6c2;
+  --color-on-tertiary-fixed-variant: #474744;
+  --color-inverse-on-surface: #f3f0ef;
+  --color-inverse-surface: #303030;
+  --color-surface-container-low: #f6f3f2;
+  --color-inverse-primary: #f0c04d;
+  --color-secondary: #625e55;
+  --color-primary-fixed-dim: #f0c04d;
+  --color-surface-tint: #785a00;
+  --color-primary: #785a00;
+  --color-outline-variant: #d2c5af;
+  --color-tertiary-fixed: #e4e2dd;
+  --color-on-primary-fixed-variant: #5b4300;
+  --color-surface-variant: #e5e2e1;
+  --color-on-tertiary-container: #535450;
+  --color-secondary-fixed-dim: #ccc6ba;
+  --color-outline: #807663;
+  --color-secondary-container: #e9e2d6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface: #fcf9f8;
+  --color-tertiary: #5e5e5b;
+  --color-on-secondary-container: #68645a;
+  --color-primary-fixed: #ffdf9d;
+  --color-tertiary-container: #c9c8c3;
+  --color-on-secondary-fixed-variant: #4a463e;
+  --color-secondary-fixed: #e9e2d6;
+  --color-on-tertiary-fixed: #1b1c19;
+  --color-surface-bright: #fcf9f8;
+  --color-primary-container: #f2c14e;
+  --color-background: #fcf9f8;
+  --color-on-primary-fixed: #251a00;
+  --color-on-surface-variant: #4e4635;
+  --color-surface-container: #f0eded;
+  --color-error: #ba1a1a;
+  --color-on-primary-container: #6b4f00;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-container-highest: #e5e2e1;
+  --color-on-tertiary: #ffffff;
+  --color-on-error: #ffffff;
+  --color-surface-container-high: #eae7e7;
+  --color-on-primary: #ffffff;
+  --color-on-secondary-fixed: #1e1b14;
+  --color-on-surface: #1b1b1c;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-on-secondary: #ffffff;
+
+  /* Typography Mapping */
+  --font-inter: var(--font-inter), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+
+  /* Spacing Tokens */
+  --spacing-gutter: 32px;
+  --spacing-container-max: 1440px;
+  --spacing-unit-lg: 32px;
+  --spacing-margin-mobile: 20px;
+  --spacing-margin-desktop: 80px;
+  --spacing-unit-sm: 8px;
+  --spacing-unit-md: 16px;
+  --spacing-unit-xs: 4px;
+  --spacing-unit-xl: 64px;
+
+  /* Border Radius */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+/* Custom Styles */
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: #fcf9f8;
+  color: #1b1b1c;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Shadow configurations */
+.shadow-gallery {
+  box-shadow: 0 10px 40px -10px rgba(27, 27, 28, 0.06);
+}
+
+/* Button hover glow */
+.btn-primary:hover {
+  box-shadow: 0 0 0 4px rgba(242, 193, 78, 0.3);
+}
+
+/* Nav links underline hover effect */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #f2c14e;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.nav-link:hover::after, .nav-active::after {
+  width: 100%;
+}
+
+/* Image zoom container */
+.zoom-container {
+  overflow: hidden;
+}
+.zoom-img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.zoom-container:hover .zoom-img {
+  transform: scale(1.05);
+}
+
+/* Image inset border */
+.image-inset {
+  position: relative;
+}
+.image-inset::after {
+  content: '';
+  position: absolute;
+  top: 1px; left: 1px; right: 1px; bottom: 1px;
+  border: 1px solid #d2c5af;
+  pointer-events: none;
+}
+
+/* Standard utilities matching desktop design */
+.max-w-container-max {
+  max-width: 1440px;
+}
+
+/* Custom transitions */
+.transition-all-custom {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
