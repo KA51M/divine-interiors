@@ -5,209 +5,184 @@ import { motion, AnimatePresence } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import { textPopup, imageSlideUp } from "@/lib/animations";
 
-const CATEGORIES = ["All", "Residential", "Commercial", "Design"] as const;
+const CATEGORIES = ["All", "Homes", "Offices", "Commercial", "Renovation", "Concept", "Details"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 const PROJECTS = [
   {
     id: 1,
     title: "Silvassa Advocate office",
-    category: "Commercial",
-    tag: "Silvassa",
+    category: "Offices",
+    location: "Silvassa",
     image: "/images/project-silvassa-advocate.jpg",
-    aspect: "",
   },
   {
     id: 2,
     title: "BANGLOW VAPI 4BHK",
-    category: "Residential",
-    tag: "Vapi",
-    image: "/images/service-5-3d-visualization.jpg",
-    aspect: "",
+    category: "Homes",
+    location: "Vapi",
+    image: "/images/project-vapi-4bhk.jpg",
   },
   {
     id: 3,
-    title: "bhilad 4BHK banglow",
-    category: "Residential",
-    tag: "Bhilad",
-    image: "/images/service-4-design-development.jpg",
-    aspect: "",
+    title: "Bhilad 4BHK Banglow",
+    category: "Homes",
+    location: "Bhilad",
+    image: "/images/project-bhilad-4bhk.jpg",
   },
   {
     id: 4,
-    title: "Dungari",
-    category: "Residential",
-    tag: "Dungari",
-    image: "/images/service-8-lighting-design.jpg",
-    aspect: "",
+    title: "Dungari Apartment",
+    category: "Homes",
+    location: "Dungari",
+    image: "/images/project-dungari-apartment.jpg",
   },
   {
     id: 5,
-    title: "pali hill 3BHK Banglow",
-    category: "Residential",
-    tag: "Pali Hill",
+    title: "Pali Hill 3BHK",
+    category: "Homes",
+    location: "Pali Hill",
     image: "/images/project-pali-hill-banglow.jpg",
-    aspect: "",
   },
   {
     id: 6,
-    title: "3BHK Banglow Silvasa",
-    category: "Residential",
-    tag: "Silvassa",
-    image: "/images/service-6-project-management.jpg",
-    aspect: "",
+    title: "3BHK Banglow",
+    category: "Homes",
+    location: "Silvassa",
+    image: "/images/project-3bhk-silvassa.jpg",
   },
   {
     id: 7,
     title: "Vapi 2BHK",
-    category: "Residential",
-    tag: "Vapi",
-    image: null,
-    aspect: "aspect-[4/3]",
+    category: "Homes",
+    location: "Vapi",
+    image: "/images/project-vapi-2bhk.jpg",
   },
   {
     id: 8,
-    title: "Pavan Putra super store",
+    title: "Pavan Putra Super Store",
     category: "Commercial",
-    tag: "Commercial",
-    image: null,
-    aspect: "aspect-[3/4]",
+    location: "Commercial",
+    image: "/images/project-pavan-putra.jpg",
   },
   {
     id: 9,
     title: "3D Optic",
     category: "Commercial",
-    tag: "Commercial",
+    location: "Commercial",
     image: "/images/project-3d-optic.jpg",
-    aspect: "",
   },
   {
     id: 10,
-    title: "monginis bakery",
+    title: "Monginis Bakery",
     category: "Commercial",
-    tag: "Commercial",
+    location: "Concept",
     image: "/images/service-3-concept-development.jpg",
-    aspect: "",
   },
   {
     id: 11,
-    title: "Banglow Project",
-    category: "Residential",
-    tag: "Residential",
-    image: null,
-    aspect: "aspect-[4/5]",
+    title: "Modern Banglow",
+    category: "Homes",
+    location: "Residential",
+    image: "/images/project-modern-banglow.jpg",
   },
   {
     id: 12,
     title: "Naroli 4BHK Banglow",
-    category: "Residential",
-    tag: "Naroli",
-    image: "/images/service-1-consultation.jpg",
-    aspect: "",
+    category: "Homes",
+    location: "Naroli",
+    image: "/images/project-naroli-banglow.jpg",
   },
   {
     id: 13,
-    title: "jewelry shop",
+    title: "Luxury Jewelry Boutique",
     category: "Commercial",
-    tag: "Commercial",
+    location: "Retail",
     image: "/images/project-jewelry-shop.jpg",
-    aspect: "",
   },
   {
     id: 14,
-    title: "Sun Residency 1 3BHK Flat",
-    category: "Residential",
-    tag: "Residential",
-    image: null,
-    aspect: "aspect-[16/9]",
+    title: "Sun Residency",
+    category: "Homes",
+    location: "Apartment",
+    image: "/images/project-sun-residency.jpg",
   },
   {
     id: 15,
-    title: "Sun residency 3BHK Flat",
-    category: "Residential",
-    tag: "Residential",
-    image: "/images/service-7-furniture-selection.jpg",
-    aspect: "",
+    title: "Modern Villa",
+    category: "Homes",
+    location: "Villa",
+    image: "/images/service-5-3d-visualization.jpg",
   },
   {
     id: 16,
-    title: "Pramukh garden 3BHK Flat",
-    category: "Residential",
-    tag: "Residential",
-    image: null,
-    aspect: "aspect-[4/3]",
+    title: "Pramukh Garden",
+    category: "Homes",
+    location: "Complex",
+    image: "/images/project-pramukh-garden.jpg",
   },
   {
     id: 17,
-    title: "Naroli site",
-    category: "Residential",
-    tag: "Naroli",
-    image: null,
-    aspect: "aspect-[3/4]",
+    title: "Naroli Site Planning",
+    category: "Concept",
+    location: "Naroli",
+    image: "/images/service-2-space-planning.jpg",
   },
   {
     id: 18,
-    title: "Office Renovate",
-    category: "Commercial",
-    tag: "Commercial",
-    image: null,
-    aspect: "aspect-[4/5]",
+    title: "Modern Office Renovation",
+    category: "Renovation",
+    location: "Corporate",
+    image: "/images/project-office-renovation.jpg",
   },
   {
     id: 19,
-    title: "Revit Work",
-    category: "Design",
-    tag: "Design",
-    image: "/images/service-2-space-planning.jpg",
-    aspect: "",
+    title: "Architectural Wireframe",
+    category: "Concept",
+    location: "Design",
+    image: "/images/service-4-design-development.jpg",
   },
   {
     id: 20,
-    title: "Vapi Site",
-    category: "Residential",
-    tag: "Vapi",
-    image: null,
-    aspect: "aspect-[1/1]",
+    title: "Vapi Site Details",
+    category: "Details",
+    location: "Vapi",
+    image: "/images/service-8-lighting-design.jpg",
   },
   {
     id: 21,
-    title: "Avanti Low Price",
-    category: "Commercial",
-    tag: "Commercial",
-    image: null,
-    aspect: "aspect-[4/3]",
+    title: "Design Consultation",
+    category: "Concept",
+    location: "Studio",
+    image: "/images/service-1-consultation.jpg",
   },
   {
     id: 22,
-    title: "Medical Store",
+    title: "Medical Solutions",
     category: "Commercial",
-    tag: "Commercial",
-    image: null,
-    aspect: "aspect-[3/4]",
+    location: "Retail",
+    image: "/images/project-medical-solutions.jpg",
   },
   {
     id: 23,
-    title: "Anam Low Price",
-    category: "Commercial",
-    tag: "Commercial",
-    image: null,
-    aspect: "aspect-[4/5]",
+    title: "Material Selection",
+    category: "Details",
+    location: "Studio",
+    image: "/images/service-7-furniture-selection.jpg",
   },
   {
     id: 24,
-    title: "Valsad Site",
-    category: "Residential",
-    tag: "Valsad",
-    image: null,
-    aspect: "aspect-[16/9]",
+    title: "Valsad Residence",
+    category: "Homes",
+    location: "Valsad",
+    image: "/images/service-6-project-management.jpg",
   },
   {
     id: 25,
-    title: "First Banglow Project",
-    category: "Residential",
-    tag: "Residential",
-    image: null,
-    aspect: "aspect-[1/1]",
+    title: "Sun Residency",
+    category: "Homes",
+    location: "Apartment",
+    image: "/images/project-sun-residency.jpg",
   },
 ];
 
@@ -276,30 +251,27 @@ export default function Projects() {
                   viewport={{ once: true, margin: "-50px" }}
                   variants={imageSlideUp(0.6, (idx % 3) * 0.05)}
                   exit="hidden"
-                  className="masonry-item group cursor-pointer"
+                  className="masonry-item hover-reveal-container group cursor-pointer relative overflow-hidden image-zoom-container border border-outline-variant/30"
                 >
-                  <div className={`relative w-full overflow-hidden bg-surface-container-low mb-3 ${project.image ? "aspect-auto" : project.aspect}`}>
-                    {project.image ? (
-                      <div className="relative w-full" style={{ height: "auto" }}>
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-auto object-cover transition-transform duration-750 group-hover:scale-105"
-                        />
-                      </div>
-                    ) : (
-                      <div className="w-full h-full bg-surface-variant flex items-center justify-center text-on-surface-variant font-label-sm text-xs uppercase tracking-widest p-12 text-center select-none min-h-[160px]">
-                        Image Coming Soon
-                      </div>
-                    )}
-                  </div>
-                  <div>
-                    <span className="text-on-surface-variant font-label-sm text-xs uppercase tracking-widest mb-1 block">
-                      {project.tag}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover transition-transform duration-750 group-hover:scale-105"
+                  />
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-on-background/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Hover Reveal Content */}
+                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="text-white/80 font-label-sm text-xs uppercase tracking-widest mb-2 inline-block">
+                      {project.category}
                     </span>
-                    <h2 className="font-playfair text-lg md:text-xl text-on-surface font-medium transition-colors duration-300 group-hover:text-primary">
+                    <h2 className="font-playfair text-lg md:text-2xl text-white drop-shadow-md font-medium leading-tight">
                       {project.title}
                     </h2>
+                    <p className="text-white/80 font-label-sm text-xs mt-2 uppercase tracking-widest">
+                      {project.location}
+                    </p>
                   </div>
                 </motion.article>
               ))}
