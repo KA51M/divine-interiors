@@ -168,6 +168,94 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 2.5. Awards & Recognition Section */}
+      <section className="w-full bg-surface py-20 md:py-28 border-t border-outline-variant/30 overflow-hidden">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left Column: Award Image */}
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-10px" }}
+              variants={imageSlideLeft(0.8)}
+              className="lg:col-span-5"
+            >
+              <div className="zoom-container border border-outline-variant/20 p-2 bg-surface-container-low shadow-gallery max-w-md mx-auto lg:ml-0 group cursor-pointer relative aspect-[4/3] w-full overflow-hidden">
+                <motion.div
+                  whileHover="hover"
+                  className="w-full h-full"
+                  variants={imageZoomVariants}
+                >
+                  <Image
+                    src="/images/award-trendsetter.jpg"
+                    alt="India Trendsetter Design Awards Ceremony"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 40vw"
+                    className="object-cover transition-all duration-750"
+                  />
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Right Column: Editorial Content */}
+            <div className="lg:col-span-7 flex flex-col items-start">
+              <motion.span 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-10px" }}
+                variants={textPopup(0.6)}
+                className="font-inter text-[10px] uppercase tracking-[0.25em] text-primary font-bold mb-4"
+              >
+                Excellence in Design
+              </motion.span>
+              
+              <motion.h2 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-10px" }}
+                variants={textPopup(0.7, 0.1)}
+                className="font-playfair text-3xl md:text-4xl lg:text-5xl text-on-background mb-8 leading-tight font-medium"
+              >
+                Awards &amp; Recognition
+              </motion.h2>
+
+              <div className="mb-8 space-y-4">
+                <motion.h3 
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-10px" }}
+                  variants={textPopup(0.7, 0.2)}
+                  className="font-playfair text-lg md:text-xl text-on-surface font-medium italic"
+                >
+                  India Trendsetter Design Awards — Goa 2024
+                </motion.h3>
+                <motion.p 
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-10px" }}
+                  variants={fadeInUp(0.8, 0.3)}
+                  className="font-inter text-sm md:text-base text-on-surface-variant leading-relaxed max-w-xl"
+                >
+                  Grateful and honored to be recognized as the <span className="text-on-background font-semibold">Promising and Innovative Interior Design &amp; Execution Firm of the Year!</span> This award is a testament to our passion for creativity and excellence in every project.
+                </motion.p>
+              </div>
+
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-10px" }}
+                variants={fadeInUp(0.8, 0.4)}
+                className="pt-6 border-t border-outline-variant/20 w-full max-w-xl"
+              >
+                <p className="font-inter text-[11px] md:text-xs text-on-surface/50 italic leading-relaxed">
+                  Thank you @beginup_com for this award; we are deeply grateful to have it in our hands.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. Featured Work */}
       <section className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 border-t border-outline-variant/30">
         <div className="flex justify-between items-end mb-12">
