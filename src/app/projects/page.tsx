@@ -208,24 +208,24 @@ export default function Projects() {
             Selected Works
           </motion.h1>
           
-          <div className="flex flex-wrap gap-4 mt-8 font-inter text-xs uppercase tracking-widest font-semibold">
+          <div className="flex overflow-x-auto scrollbar-none pb-2 -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0 md:flex-wrap gap-2 md:gap-4 mt-8 font-inter text-xs uppercase tracking-widest font-semibold scroll-smooth whitespace-nowrap">
             {CATEGORIES.map((category) => {
               const isActive = activeFilter === category;
               return (
                 <button
                   key={category}
                   onClick={() => setActiveFilter(category)}
-                  className={`pb-1.5 px-3 transition-all relative cursor-pointer ${
+                  className={`pb-1.5 px-3 transition-all relative cursor-pointer whitespace-nowrap ${
                     isActive
-                      ? "text-on-surface font-bold"
-                      : "text-on-surface-variant hover:text-on-surface"
+                      ? "text-[#785a00] font-bold"
+                      : "text-on-surface-variant hover:text-[#785a00]"
                   }`}
                 >
                   <span className="relative z-10">{category}</span>
                   {isActive && (
                     <motion.div
                       layoutId="active-filter-underline"
-                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-on-background dark:bg-surface-tint"
+                      className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#785a00]"
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
                   )}

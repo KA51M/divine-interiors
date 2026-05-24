@@ -12,7 +12,6 @@ const DESKTOP_NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const MOBILE_NAV_ITEMS = [
@@ -84,10 +83,10 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <Link
               href="/contact"
-              className="p-2.5 text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors flex items-center justify-center rounded-full bg-surface-container-low border border-outline-variant/30"
+              className="p-2.5 text-black hover:text-primary transition-colors flex items-center justify-center rounded-full bg-surface-container-low border border-outline-variant/30"
               aria-label="Contact Studio"
             >
-              <Phone size={18} className="text-black dark:text-white fill-current" />
+              <Phone size={18} className="text-black fill-current" />
             </Link>
           </div>
         </div>
