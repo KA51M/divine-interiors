@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import { textPopup, imageSlideUp } from "@/lib/animations";
 
@@ -237,47 +238,44 @@ export default function Projects() {
 
         {/* Gallery Grid */}
         <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16">
-          <motion.div
-            layout
-            className="masonry-grid"
-          >
-            <AnimatePresence mode="popLayout">
-              {filteredProjects.map((project, idx) => (
-                <motion.article
-                  key={project.id}
-                  layout
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-10px" }}
-                  variants={imageSlideUp(0.6, (idx % 3) * 0.05)}
-                  exit="hidden"
-                  className="masonry-item group cursor-pointer relative overflow-hidden image-zoom-container border border-outline-variant/30"
-                >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-auto object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                  />
-                  
-                  {/* Permanent Premium Gradient Overlay for Legibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
-                  
-                  {/* Content (Permanently visible) */}
-                  <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end">
-                    <span className="text-white/80 font-inter text-[9px] md:text-xs uppercase tracking-widest mb-1 md:mb-2 inline-block font-semibold">
-                      {project.category}
-                    </span>
-                    <h2 className="font-playfair text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium leading-tight group-hover:text-[#f2c14e] transition-colors duration-300">
-                      {project.title}
-                    </h2>
-                    <p className="text-white/70 font-inter text-[9px] md:text-xs mt-1 md:mt-2 uppercase tracking-widest">
-                      {project.location}
-                    </p>
-                  </div>
-                </motion.article>
-              ))}
-            </AnimatePresence>
-          </motion.div>
+          <div className="masonry-grid">
+            {filteredProjects.map((project, idx) => (
+              <motion.article
+                key={project.id}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-10px" }}
+                variants={imageSlideUp(0.5, (idx % 2) * 0.05)}
+                className="masonry-item group cursor-pointer relative overflow-hidden image-zoom-container border border-outline-variant/30"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={500}
+                  height={650}
+                  priority={idx < 4}
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="w-full h-auto object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                />
+                
+                {/* Permanent Premium Gradient Overlay for Legibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"></div>
+                
+                {/* Content (Permanently visible) */}
+                <div className="absolute inset-0 p-4 md:p-6 flex flex-col justify-end">
+                  <span className="text-white/80 font-inter text-[9px] md:text-xs uppercase tracking-widest mb-1 md:mb-2 inline-block font-semibold">
+                    {project.category}
+                  </span>
+                  <h2 className="font-playfair text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium leading-tight group-hover:text-[#f2c14e] transition-colors duration-300">
+                    {project.title}
+                  </h2>
+                  <p className="text-white/70 font-inter text-[9px] md:text-xs mt-1 md:mt-2 uppercase tracking-widest">
+                    {project.location}
+                  </p>
+                </div>
+              </motion.article>
+            ))}
+          </div>
         </section>
       </div>
     </PageTransition>
