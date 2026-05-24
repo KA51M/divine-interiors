@@ -65,7 +65,7 @@ export const textPopup = (duration = 0.6, delay = 0): Variants => ({
 
 /* Specific Image Slide In Animations */
 export const imageSlideLeft = (duration = 0.8, delay = 0): Variants => ({
-  hidden: { opacity: 0, x: -80 },
+  hidden: { opacity: 0, x: -24 },
   visible: {
     opacity: 1,
     x: 0,
@@ -74,7 +74,7 @@ export const imageSlideLeft = (duration = 0.8, delay = 0): Variants => ({
 });
 
 export const imageSlideRight = (duration = 0.8, delay = 0): Variants => ({
-  hidden: { opacity: 0, x: 80 },
+  hidden: { opacity: 0, x: 24 },
   visible: {
     opacity: 1,
     x: 0,
@@ -83,7 +83,7 @@ export const imageSlideRight = (duration = 0.8, delay = 0): Variants => ({
 });
 
 export const imageSlideUp = (duration = 0.8, delay = 0): Variants => ({
-  hidden: { opacity: 0, y: 80 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
@@ -92,7 +92,7 @@ export const imageSlideUp = (duration = 0.8, delay = 0): Variants => ({
 });
 
 export const imageSlideDown = (duration = 0.8, delay = 0): Variants => ({
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -24 },
   visible: {
     opacity: 1,
     y: 0,

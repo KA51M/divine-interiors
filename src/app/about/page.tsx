@@ -90,7 +90,7 @@ export default function About() {
               <motion.h2
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.6)}
                 className="font-inter text-xs uppercase tracking-widest text-primary font-bold mb-4"
               >
@@ -101,7 +101,7 @@ export default function About() {
               <motion.p
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.7, 0.1)}
               >
                 Founded on the belief that a well-designed space can fundamentally alter the quality of daily life, STUDIO is a multidisciplinary interior architecture practice. We approach each project as a unique narrative, drawing inspiration from our clients&apos; histories and the inherent character of the architecture itself.
@@ -109,7 +109,7 @@ export default function About() {
               <motion.p
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.7, 0.2)}
               >
                 Our studio operates at the intersection of rigorous architectural planning and curated decorative arts. We do not impose a singular house style; rather, we apply a consistent philosophy of refined reductionism, where every material, line, and object must justify its presence.
@@ -122,7 +122,7 @@ export default function About() {
               <motion.h2
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.6)}
                 className="font-inter text-xs uppercase tracking-widest text-primary font-bold mb-4"
               >
@@ -133,7 +133,7 @@ export default function About() {
               <motion.p
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.7, 0.1)}
               >
                 Our methodology is rooted in an &apos;Editorial Minimalism&apos;—a deliberate orchestration of space, light, and texture to create environments that feel like curated gallery spaces yet remain deeply inviting. We prioritize high-contrast material palettes: raw concrete against polished brass, heavily textured linens against smooth lacquer.
@@ -141,7 +141,7 @@ export default function About() {
               <motion.p
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={textPopup(0.7, 0.2)}
               >
                 The process is highly collaborative and relentlessly detailed. From initial spatial planning to the final placement of a bespoke ceramic vessel, our focus remains on creating a cohesive sensory experience that speaks of quiet confidence and timeless relevance.
@@ -156,7 +156,7 @@ export default function About() {
             <motion.h3
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={textPopup(0.6)}
               className="font-playfair text-3xl md:text-4xl text-center mb-16 font-medium text-on-surface"
             >
@@ -172,7 +172,7 @@ export default function About() {
                     key={item.year}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-10px" }}
                     variants={textPopup(0.6, idx * 0.15)}
                     className="flex flex-col md:items-center text-left md:text-center group"
                   >
@@ -200,7 +200,7 @@ export default function About() {
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={textPopup(0.6)}
               className="font-playfair text-2xl md:text-3xl text-on-surface font-medium"
             >
@@ -219,7 +219,7 @@ export default function About() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideLeft(0.8)}
               className="md:col-span-8 bg-surface-container relative overflow-hidden group border border-outline-variant/50 aspect-[4/3] md:aspect-video"
             >
@@ -248,7 +248,7 @@ export default function About() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={imageSlideRight(0.8, 0.1)}
                 className="bg-surface-container relative overflow-hidden group border border-outline-variant/50 aspect-[4/3] flex-1"
               >
@@ -273,7 +273,7 @@ export default function About() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-10px" }}
                 variants={imageSlideRight(0.8, 0.2)}
                 className="bg-surface-container relative overflow-hidden group border border-outline-variant/50 aspect-[4/3] flex-1"
               >

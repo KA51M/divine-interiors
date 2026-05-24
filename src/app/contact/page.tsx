@@ -317,7 +317,7 @@ export default function Contact() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideRight(0.8)}
               className="w-full aspect-[4/3] md:aspect-square bg-surface-container-highest relative overflow-hidden border border-outline-variant/30 mt-auto group cursor-pointer"
             >

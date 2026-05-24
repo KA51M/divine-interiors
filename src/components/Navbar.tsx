@@ -29,7 +29,7 @@ export default function Navbar() {
     <>
       {/* Top Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-on-background/80 border-b border-outline-variant/30">
-        <div className="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="w-full flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
           {/* Logo only - Sleek, proper size, no bg color, no text */}
           <Link href="/" className="flex items-center group">
             <div className="relative h-8 md:h-11 w-24 md:w-32">
@@ -98,7 +98,7 @@ export default function Navbar() {
         className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-t border-outline-variant/20 shadow-[0_-4px_24px_-10px_rgba(27,27,28,0.08)]"
         style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 8px)" }}
       >
-        <div className="flex justify-around items-center h-16 max-w-md mx-auto">
+        <div className="w-full flex justify-around items-center h-16 max-w-md mx-auto px-4">
           {MOBILE_NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const isActive = pathname === item.href;

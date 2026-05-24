@@ -103,14 +103,14 @@ export default function Home() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={textPopup(0.6)}
               className="w-12 h-px bg-outline mb-8"
             ></motion.div>
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={textPopup(0.7)}
               className="font-playfair text-3xl md:text-4xl lg:text-5xl font-medium text-on-background mb-6 leading-tight"
             >
@@ -119,7 +119,7 @@ export default function Home() {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={textPopup(0.8, 0.1)}
               className="font-inter text-base text-on-surface-variant mb-8 leading-relaxed"
             >
@@ -128,7 +128,7 @@ export default function Home() {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={fadeInUp(0.6, 0.2)}
             >
               <Link
@@ -145,7 +145,7 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideRight(0.8)}
             className="md:col-span-6 md:col-start-7 order-1 md:order-2 zoom-container border border-outline-variant/50 p-2 bg-surface-container-low shadow-gallery relative group cursor-pointer"
           >
@@ -174,7 +174,7 @@ export default function Home() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={textPopup(0.6)}
             className="font-playfair text-2xl md:text-3xl text-on-background"
           >
@@ -194,7 +194,7 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideLeft(0.8)}
             className="md:col-span-8 group relative overflow-hidden border border-outline-variant/50 bg-surface cursor-pointer aspect-[16/10] md:aspect-[16/9]"
           >
@@ -220,7 +220,7 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideRight(0.8)}
             className="md:col-span-4 group relative overflow-hidden border border-outline-variant/50 bg-surface cursor-pointer aspect-square md:aspect-auto"
           >
@@ -246,7 +246,7 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideLeft(0.8)}
             className="md:col-span-4 group relative overflow-hidden border border-outline-variant/50 bg-surface cursor-pointer aspect-square md:aspect-auto"
           >
@@ -272,7 +272,7 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideRight(0.8)}
             className="md:col-span-8 group relative overflow-hidden border border-outline-variant/50 bg-surface cursor-pointer aspect-[16/10] md:aspect-[16/9]"
           >
@@ -310,7 +310,7 @@ export default function Home() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-10px" }}
           variants={textPopup(0.8)}
           className="max-w-4xl mx-auto text-center"
         >
@@ -327,7 +327,7 @@ export default function Home() {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={textPopup(0.6)}
             className="font-playfair text-4xl sm:text-5xl md:text-6xl text-on-background mb-4"
           >
@@ -336,7 +336,7 @@ export default function Home() {
           <motion.p
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={textPopup(0.7, 0.1)}
             className="font-inter text-base text-on-surface-variant max-w-2xl mx-auto opacity-70 leading-relaxed"
           >
@@ -349,14 +349,14 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideUp(0.6)}
             className="group relative bg-[#dfac2c]/10 border border-outline-variant/30 p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 flex flex-col h-full md:col-span-12 lg:col-span-8 cursor-pointer"
           >
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideUp(0.8)}
               className="relative w-full aspect-video md:aspect-[21/9] mb-6 overflow-hidden border border-outline-variant/20"
             >
@@ -386,14 +386,14 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideUp(0.6, 0.1)}
             className="group relative bg-[#dfac2c]/10 border border-outline-variant/30 p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 flex flex-col h-full md:col-span-6 lg:col-span-4 cursor-pointer"
           >
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideRight(0.8)}
               className="relative w-full aspect-[4/3] mb-6 overflow-hidden border border-outline-variant/20"
             >
@@ -423,14 +423,14 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideUp(0.6, 0.2)}
             className="group relative bg-[#dfac2c]/10 border border-outline-variant/30 p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 flex flex-col h-full md:col-span-6 lg:col-span-5 cursor-pointer"
           >
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideLeft(0.8)}
               className="relative w-full aspect-[4/3] mb-6 overflow-hidden border border-outline-variant/20"
             >
@@ -460,14 +460,14 @@ export default function Home() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             variants={imageSlideUp(0.6, 0.3)}
             className="group relative bg-[#dfac2c]/10 border border-outline-variant/30 p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 flex flex-col h-full md:col-span-12 lg:col-span-7 cursor-pointer"
           >
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "-10px" }}
               variants={imageSlideUp(0.8)}
               className="relative w-full aspect-video mb-6 overflow-hidden border border-outline-variant/20"
             >
