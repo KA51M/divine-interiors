@@ -144,3 +144,25 @@ body {
 .transition-all-custom {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Responsive Masonry Layout */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 24px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 32px;
+  display: block;
+}
