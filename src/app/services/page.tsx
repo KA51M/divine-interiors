@@ -60,6 +60,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Strategic</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">1. Consultation</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Strategic guidance to define your vision and the structural requirements of your space.</p>
               </div>
@@ -80,6 +81,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Architectural</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">2. Space Planning</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Optimizing layout and flow to ensure functional elegance and architectural balance.</p>
               </div>
@@ -100,6 +102,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Creative</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">3. Concept Development</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Curating materials, textures, and palettes to establish a cohesive visual narrative.</p>
               </div>
@@ -120,6 +123,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Technical</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">4. Design Development</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Refining concepts into detailed plans and precise specifications for execution.</p>
               </div>
@@ -140,6 +144,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Visual</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">5. 3D Visualization</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">High-fidelity renderings to preview your space with absolute architectural accuracy.</p>
               </div>
@@ -160,6 +165,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Operational</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">6. Project Management</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Seamless oversight from blueprint to final build, ensuring impeccable execution.</p>
               </div>
@@ -180,6 +186,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Curatorial</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">7. Furniture Selection</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Sourcing and procurement of bespoke pieces that elevate the overall aesthetic.</p>
               </div>
@@ -200,6 +207,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Atmospheric</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">8. Lighting Design</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Orchestrating natural and artificial light to enhance mood and architectural form.</p>
               </div>
@@ -220,6 +228,7 @@ export default function Services() {
                 />
               </div>
               <div className="flex flex-col gap-2 border-t border-[#1F1F1F]/20 pt-4">
+                <span className="font-label-sm text-on-surface-variant uppercase tracking-widest">Bespoke</span>
                 <h3 className="font-headline-md text-headline-md font-playfair text-xl md:text-2xl text-[#1F1F1F] font-medium">9. Custom Elements</h3>
                 <p className="font-body-md text-body-md font-inter text-sm md:text-base text-[#1F1F1F]/70 leading-relaxed">Tailored millwork and unique architectural features designed exclusively for you.</p>
               </div>
