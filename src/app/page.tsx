@@ -393,6 +393,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 3.5. Impact Stats Section */}
+      <section className="w-full bg-surface-container-low border-t border-outline-variant/30 py-20 md:py-24 overflow-hidden">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+            {/* Stat 1 */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-10px" }}
+              variants={fadeInUp(0.8, 0.1)}
+              className="flex flex-col items-center justify-center p-8 border border-outline-variant/20 bg-surface rounded-sm shadow-gallery"
+            >
+              <span className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">
+                36
+              </span>
+              <span className="font-inter text-xs uppercase tracking-[0.2em] text-on-surface-variant font-semibold">
+                Clients in India
+              </span>
+            </motion.div>
+
+            {/* Stat 2 */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-10px" }}
+              variants={fadeInUp(0.8, 0.2)}
+              className="flex flex-col items-center justify-center p-8 border border-outline-variant/20 bg-surface rounded-sm shadow-gallery"
+            >
+              <span className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">
+                50
+              </span>
+              <span className="font-inter text-xs uppercase tracking-[0.2em] text-on-surface-variant font-semibold">
+                Projects Completed
+              </span>
+            </motion.div>
+
+            {/* Stat 3 */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-10px" }}
+              variants={fadeInUp(0.8, 0.3)}
+              className="flex flex-col items-center justify-center p-8 border border-outline-variant/20 bg-surface rounded-sm shadow-gallery"
+            >
+              <div className="flex items-baseline justify-center mb-3">
+                <span className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-primary">
+                  5,555
+                </span>
+                <span className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold text-primary ml-1">
+                  K
+                </span>
+              </div>
+              <span className="font-inter text-xs uppercase tracking-[0.2em] text-on-surface-variant font-semibold">
+                Square Feet
+              </span>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. Philosophy Strip */}
       <section className="w-full bg-secondary-container py-32 px-margin-mobile md:px-margin-desktop border-y border-outline-variant/30">
         <motion.div
