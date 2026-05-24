@@ -82,19 +82,22 @@ export default function Navbar() {
 
           {/* Mobile Right Call Action */}
           <div className="md:hidden flex items-center">
-            <a
-              href="tel:+12125550198"
+            <Link
+              href="/contact"
               className="p-2.5 text-on-surface dark:text-inverse-on-surface hover:text-primary transition-colors flex items-center justify-center rounded-full bg-surface-container-low border border-outline-variant/30"
-              aria-label="Call Studio"
+              aria-label="Contact Studio"
             >
               <Phone size={18} className="text-black dark:text-white fill-current" />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
 
       {/* Mobile Bottom Tab Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-t border-outline-variant/20 shadow-[0_-4px_24px_-10px_rgba(27,27,28,0.08)] pb-safe">
+      <nav 
+        className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-t border-outline-variant/20 shadow-[0_-4px_24px_-10px_rgba(27,27,28,0.08)]"
+        style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 8px)" }}
+      >
         <div className="flex justify-around items-center h-16 max-w-md mx-auto">
           {MOBILE_NAV_ITEMS.map((item) => {
             const Icon = item.icon;
